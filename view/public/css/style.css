@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*Separacion dependiendo de borde del elemento*/
+}
+body {
+    width: 100vw; /* lo que se alcase a ver Vw */
+    height: 100vh; /* lo que se alcanse a ver en lo largo */
+    background-image: url('../img/1.jpg'); /*tenes que salirte del fondo con dos puntos ..*/
+    background-position: center center;
+    background-size: cover; /* para que no pierda calidad y se expanda todo lo que se */
+    background-repeat: no-repeat; /* pa que no se repita */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 40%;
+    height: 40%;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    backdrop-filter: blur(4px); /* genera un cuadro opaco */
+}
+.form div{
+    display: contents;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+.form div label {
+    color: white;
+    letter-spacing: 2px;/* Separacion entre las letras */
+}
+.form div input{
+    outline: none;
+    height: 30px;
+    border-radius: 10px;
+}
+.form button {
+    width: 40%;
+    margin-top: 20px;
+    background-color: white;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
